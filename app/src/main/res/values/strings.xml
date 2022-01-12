@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Nahda App</string>
+    <string name="category_default_name">category</string>
+
+    <string-array name="compagnies">
+        <item>atlas</item>
+        <item>plader</item>
+        <item>ilham</item>
+        <item>mps</item>
+        <item>galaxy</item>
+        <item>tunisie</item>
+        <item>dream</item>
+        <item>plastic rome</item>
+        <item>roche</item>
+        <item>autre</item>
+    </string-array>
+</resources>

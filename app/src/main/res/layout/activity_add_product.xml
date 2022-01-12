@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddProduct"
+    android:background="@drawable/header"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/Menu_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nouvel article"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/roboto_regular"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/product_name"
+        android:hint="nom"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:background="@color/white"
+        android:layout_below="@+id/Menu_title"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/product_color"
+        android:hint="couleur"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:background="@color/white"
+        android:layout_below="@+id/product_name"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/product_quantity"
+        android:hint="quantite"
+        android:inputType="number"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:background="@color/white"
+        android:layout_below="@+id/product_color"/>
+
+    <Spinner
+        android:id="@+id/compagnies"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/compagnies"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:background="@color/white"
+        android:layout_below="@id/product_quantity"
+        />
+
+    <Button
+        android:id="@+id/submit_product"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="confirmer"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:layout_below="@id/compagnies"/>
+
+</RelativeLayout>
