@@ -16,6 +16,8 @@ public class MainActivity extends AppCompatActivity {
 
 
         CardView cardView=findViewById(R.id.entreprises);
+
+
         cardView.setOnClickListener(new View.OnClickListener()
         {
             @Override
